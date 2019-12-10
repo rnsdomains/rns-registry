@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "RNS Registry",
   "files": [
-    "/contracts"
+    "/contracts",
+    "!/contracts/Migrations.sol"
   ],
   "scripts": {
     "test": "truffle test"

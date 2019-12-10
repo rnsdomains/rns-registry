@@ -2,10 +2,9 @@
   "name": "@rsksmart/rns-registry",
   "version": "1.0.0",
   "description": "RNS Registry",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "/contracts"
+  ],
   "scripts": {
     "test": "truffle test"
   },

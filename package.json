@@ -1,12 +1,14 @@
 {
   "name": "@rsksmart/rns-registry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RNS Registry",
   "files": [
     "/contracts",
-    "!/contracts/Migrations.sol"
+    "!/contracts/Migrations.sol",
+    "RNSRegistryData.json"
   ],
   "scripts": {
+    "prepublish": "npx truffle compile && node datagen.js",
     "test": "truffle test"
   },
   "repository": {
@@ -27,6 +29,7 @@
   "devDependencies": {
     "@openzeppelin/test-helpers": "^0.5.4",
     "chai": "^4.2.0",
-    "eth-ens-namehash": "^2.0.8"
+    "eth-ens-namehash": "^2.0.8",
+    "truffle": "^5.1.9"
   }
 }

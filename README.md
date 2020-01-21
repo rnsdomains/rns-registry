@@ -24,6 +24,14 @@ contract Registrar {
 }
 ```
 
+```js
+const Web3 = require('web3');
+const RNSRegistryData = require('@rsksmart/rns-registry/RNSRegistryData.json');
+
+const web3 = new Web3('https://public-node.rsk.co')
+const RNSRegistry = new web3.eth.Contract(RNSRegistryData.abi, RNSRegistryData.address.rskMainnet);
+```
+
 ---
 
 - [Docs](https://developers.rsk.co/rif/rns/architecture/Registry/)

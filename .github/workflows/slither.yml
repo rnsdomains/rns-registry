@@ -3,7 +3,7 @@ on: [push]
 jobs:
   main_job:
     runs-on: ubuntu-latest
-    name: Solidity Security 
+    name: Solidity Security
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -15,6 +15,6 @@ jobs:
           high-threshold: 1
           medium-threshold: 1
           low-threshold: 3
-          optimization-threshold: 3
+          optimization-threshold: 5
           informative-threshold: 10
           projectPath: "."

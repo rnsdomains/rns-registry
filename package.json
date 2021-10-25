@@ -1,6 +1,6 @@
 {
   "name": "@rsksmart/rns-registry",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "RNS Registry",
   "files": [
     "/contracts",
